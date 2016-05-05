@@ -15,5 +15,6 @@ export default {
   District: '区县',
   Street: '街道',
   Building: '建筑',
-  Detail: '详情'
+  Detail: '详情',
+  'ZIP Code': '邮政编码'
 };

@@ -15,5 +15,6 @@ export default {
   District: 'District',
   Street: 'Street',
   Building: 'Building',
-  Detail: 'Detail'
+  Detail: 'Detail',
+  'ZIP Code': 'ZIP Code'
 }

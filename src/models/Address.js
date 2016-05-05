@@ -10,6 +10,7 @@ export default class Address extends service.Model {
   static defaultColumns = 'user name tel geo province city createdAt';
   static defaultSort = '-createdAt';
   static api = {
+    create: 3,
     list: 3,
     update: 3,
     remove: 3
@@ -29,6 +30,10 @@ export default class Address extends service.Model {
     },
     tel: {
       label: 'Tel',
+      type: String
+    },
+    zip: {
+      label: 'ZIP Code',
       type: String
     },
     geo: {
@@ -57,8 +62,7 @@ export default class Address extends service.Model {
     },
     building: {
       label: 'Building',
-      type: String,
-      default: ''
+      type: String
     },
     detail: {
       label: 'Detail',

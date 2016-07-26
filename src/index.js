@@ -6,7 +6,7 @@
 
 import alaska from 'alaska';
 
-export default class AddressService extends alaska.Service {
+class AddressService extends alaska.Service {
   constructor(options, alaska) {
     options = options || {};
     options.dir = options.dir || __dirname;
@@ -14,3 +14,5 @@ export default class AddressService extends alaska.Service {
     super(options, alaska);
   }
 }
+
+export default new AddressService();

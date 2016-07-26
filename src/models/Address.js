@@ -4,8 +4,11 @@
  * @author Liang <liang@maichong.it>
  */
 
-export default class Address extends service.Model {
+import alaska from 'alaska';
+
+export default class Address extends alaska.Model {
   static label = 'Address';
+  static icon = 'map-marker';
   static title = 'name';
   static defaultColumns = 'user name tel geo province city createdAt';
   static defaultSort = '-createdAt';
@@ -19,7 +22,7 @@ export default class Address extends service.Model {
   static fields = {
     user: {
       label: 'User',
-      ref: 'user.User',
+      ref: 'alaska-user.User',
       required: true,
       private: true
     },
